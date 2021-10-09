@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lemondemon.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="lemondemon down0000" x="1710" y="597" width="586" height="546" pivotX="275.9" pivotY="395.3"/>
+	<SubTexture name="lemondemon down0001" x="1159" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0002" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0003" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0004" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0005" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0006" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0007" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0008" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0009" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0010" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0011" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0012" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0013" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0014" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0015" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0016" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0017" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0018" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0019" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon down0020" x="1745" y="1776" width="586" height="546"/>
+	<SubTexture name="lemondemon idle0000" x="1752" y="0" width="570" height="597" pivotX="275.95" pivotY="440.55"/>
+	<SubTexture name="lemondemon idle0001" x="1752" y="0" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0002" x="0" y="587" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0003" x="0" y="587" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0004" x="570" y="587" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0005" x="570" y="587" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0006" x="1140" y="597" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0007" x="1140" y="597" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0008" x="1140" y="597" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0009" x="1140" y="597" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0010" x="1140" y="597" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0011" x="1140" y="597" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0012" x="1140" y="597" width="570" height="597"/>
+	<SubTexture name="lemondemon idle0013" x="1140" y="597" width="570" height="597"/>
+	<SubTexture name="lemondemon left0000" x="0" y="0" width="584" height="587" pivotX="301.6" pivotY="419.25"/>
+	<SubTexture name="lemondemon left0001" x="584" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0002" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0003" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0004" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0005" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0006" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0007" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0008" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0009" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0010" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0011" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0012" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0013" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0014" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0015" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0016" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0017" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0018" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0019" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon left0020" x="1168" y="0" width="584" height="587"/>
+	<SubTexture name="lemondemon right0000" x="0" y="1184" width="589" height="574" pivotX="272.9" pivotY="421.55"/>
+	<SubTexture name="lemondemon right0001" x="589" y="1194" width="589" height="574"/>
+	<SubTexture name="lemondemon right0002" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0003" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0004" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0005" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0006" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0007" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0008" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0009" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0010" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0011" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0012" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0013" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0014" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0015" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0016" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0017" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0018" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0019" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon right0020" x="0" y="1758" width="589" height="574"/>
+	<SubTexture name="lemondemon up0000" x="1178" y="1194" width="570" height="582" pivotX="275.95" pivotY="452.35"/>
+	<SubTexture name="lemondemon up0001" x="589" y="1768" width="570" height="582"/>
+	<SubTexture name="lemondemon up0002" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0003" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0004" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0005" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0006" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0007" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0008" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0009" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0010" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0011" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0012" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0013" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0014" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0015" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0016" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0017" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0018" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0019" x="0" y="2332" width="570" height="582"/>
+	<SubTexture name="lemondemon up0020" x="0" y="2332" width="570" height="582"/>
+</TextureAtlas>
