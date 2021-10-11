@@ -1,0 +1,30 @@
+{
+	"songs": [
+		[
+			"every-lemon-demon",
+			"lemondemon",
+			[
+				66,
+				0,
+				133
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"weekCharacters": [
+		"lemondemon",
+		"bf",
+		"gf"
+	],
+	"storyName": "every lemon demon song",
+	"weekName": "every lemon demon song",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

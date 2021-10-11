@@ -1,0 +1,30 @@
+{
+	"storyName": "two trucks",
+	"hideFreeplay": false,
+	"weekBackground": "limo",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"lemondemon",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"two-trucks",
+			"lemondemon",
+			[
+				66,
+				0,
+				133
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "two trucks"
+}
