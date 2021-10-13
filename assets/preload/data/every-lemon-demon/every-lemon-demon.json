@@ -1503,7 +1503,7 @@
 		"player2": "lemon-demon-night",
 		"player3": "gf-toysrus-night",
 		"song": "Every Lemon Demon",
-		"stage": "stage",
+		"stage": "toysrus-night",
 		"needsVoices": false,
 		"validScore": true,
 		"bpm": 80,

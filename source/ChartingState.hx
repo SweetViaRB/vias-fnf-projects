@@ -51,7 +51,9 @@ class ChartingState extends MusicBeatState
 		'',
 		'1 - Alt Animation',
 		'2 - Hey!',
-		'3 - Hurt Note'
+		'3 - Hurt Note',
+		'4 - Spooky Note',
+		'5 - Ruby Note'
 	];
 
 	private static var eventStuff:Array<Dynamic> =
@@ -123,6 +125,7 @@ class ChartingState extends MusicBeatState
 
 	var value1InputText:FlxUIInputText;
 	var value2InputText:FlxUIInputText;
+	var value3InputText:FlxUIInputText;
 	var currentSongName:String;
 	var zoomMult:Int = 1; //0 = 0.5 actually lmao
 	var zoomTxt:FlxText;
@@ -639,9 +642,15 @@ class ChartingState extends MusicBeatState
 		value2InputText = new FlxUIInputText(20, 150, 100, "");
 		blockPressWhileTypingOn.push(value2InputText);
 
+		var text:FlxText = new FlxText(20, 170, 0, "Value 3:");
+		tab_group_event.add(text);
+		value3InputText = new FlxUIInputText(20, 190, 100, "");
+		blockPressWhileTypingOn.push(value3InputText);
+
 		tab_group_event.add(descText);
 		tab_group_event.add(value1InputText);
 		tab_group_event.add(value2InputText);
+		tab_group_event.add(value3InputText);
 		tab_group_event.add(eventDropDown);
 
 		UI_box.addGroup(tab_group_event);
@@ -851,6 +860,10 @@ class ChartingState extends MusicBeatState
 				}
 				else if(sender == value2InputText) {
 					curSelectedNote[4] = value2InputText.text;
+					updateGrid();
+				}
+				else if(sender == value3InputText) {
+					curSelectedNote[5] = value3InputText.text;
 					updateGrid();
 				}
 				else if(sender == strumTimeInputText) {
@@ -1397,6 +1410,7 @@ class ChartingState extends MusicBeatState
 				}
 				value1InputText.text = curSelectedNote[3];
 				value2InputText.text = curSelectedNote[4];
+				value3InputText.text = curSelectedNote[5];
 			}
 			strumTimeInputText.text = curSelectedNote[0];
 		}
@@ -1503,6 +1517,7 @@ class ChartingState extends MusicBeatState
 			note.eventName = daSus;
 			note.eventVal1 = i[3];
 			note.eventVal2 = i[4];
+			note.eventVal3 = i[5];
 		}
 		note.setGraphicSize(GRID_SIZE, GRID_SIZE);
 		note.updateHitbox();
@@ -1605,7 +1620,8 @@ class ChartingState extends MusicBeatState
 			var event = eventStuff[Std.parseInt(eventDropDown.selectedId)][0];
 			var text1 = value1InputText.text;
 			var text2 = value2InputText.text;
-			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, event, text1, text2]);
+			var text3 = value3InputText.text;
+			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, event, text1, text2, text3]);
 		}
 		curSelectedNote = _song.notes[curSection].sectionNotes[_song.notes[curSection].sectionNotes.length - 1];
 

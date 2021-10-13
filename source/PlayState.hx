@@ -321,6 +321,8 @@ class PlayState extends MusicBeatState
 					curStage = 'school';
 				case 'thorns':
 					curStage = 'schoolEvil';
+				case 'every-lemon-demon':
+					curStage = 'toysrus-night';
 				default:
 					curStage = 'stage';
 			}
@@ -328,6 +330,7 @@ class PlayState extends MusicBeatState
 
 		var stageData:StageFile = StageData.getStageFile(curStage);
 		if(stageData == null) { //Stage couldn't be found, create a dummy stage for preventing a crash
+			trace("owo");
 			stageData = {
 				directory: "",
 				defaultZoom: 0.9,
@@ -625,10 +628,17 @@ class PlayState extends MusicBeatState
 					bg.antialiasing = false;
 					add(bg);
 				}
+			case 'toysrus-night': //is that lemon demon???
+				var floor:BGSprite = new BGSprite('toysrus/floor', -976.75, 646.25, 1, 1);
+				add(floor);
+
+				var shelves:BGSprite = new BGSprite('toysrus/shelves', -608.95, -418.55, 1, 1);
+				add(shelves);
+				trace(floor);
 		}
 
 		if(isPixelStage) {
-			introSoundsSuffix = '-pixel';
+			//introSoundsSuffix = '-pixel';
 		}
 
 		add(gfGroup);
@@ -3926,41 +3936,52 @@ class PlayState extends MusicBeatState
 
 	#if ACHIEVEMENTS_ALLOWED
 	private function checkForAchievement(arrayIDs:Array<Int>):Int {
+		var weeknames:Array<Dynamic> = [
+			"everylemondemon",
+			"twotrucks"
+		];
 		for (i in 0...arrayIDs.length) {
 			if(!Achievements.achievementsUnlocked[arrayIDs[i]][1]) {
 				switch(arrayIDs[i]) {
-					case 1 | 2 | 3 | 4 | 5 | 6 | 7:
+					case 1 | 2:
 						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARD' &&
-						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week' + arrayIDs[i]) && !changedDifficulty && !usedPractice) {
+						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == (weeknames[arrayIDs[i]]) && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
-					case 8:
+						case 3:
+						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARDER' &&
+						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ("everylemondemon") && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+						case 4:
+						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'Ruby' &&
+						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ("twotrucks") && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 5:
 						if(ratingPercent < 0.2 && !practiceMode && !cpuControlled) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
-					case 9:
+					case 6:
 						if(ratingPercent >= 1 && !usedPractice && !cpuControlled) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
-					case 10:
-						if(Achievements.henchmenDeath >= 100) {
-							Achievements.unlockAchievement(arrayIDs[i]);
-							return arrayIDs[i];
-						}
-					case 11:
+					case 7:
 						if(boyfriend.holdTimer >= 20 && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
-					case 12:
+					case 8:
 						if(!boyfriendIdled && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
-					case 13:
+					case 9:
 						if(!usedPractice) {
 							var howManyPresses:Int = 0;
 							for (j in 0...keysPressed.length) {
@@ -3972,13 +3993,8 @@ class PlayState extends MusicBeatState
 								return arrayIDs[i];
 							}
 						}
-					case 14:
+					case 10:
 						if(/*ClientPrefs.framerate <= 60 &&*/ ClientPrefs.lowQuality && !ClientPrefs.globalAntialiasing && !ClientPrefs.imagesPersist) {
-							Achievements.unlockAchievement(arrayIDs[i]);
-							return arrayIDs[i];
-						}
-					case 15:
-						if(Paths.formatToSongPath(SONG.song) == 'test' && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}

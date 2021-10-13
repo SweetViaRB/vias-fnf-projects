@@ -31,6 +31,7 @@ class Note extends FlxSprite
 	public var eventName:String = '';
 	public var eventVal1:String = '';
 	public var eventVal2:String = '';
+	public var eventVal3:String = '';
 
 	public var colorSwap:ColorSwap;
 	public var inEditor:Bool = false;

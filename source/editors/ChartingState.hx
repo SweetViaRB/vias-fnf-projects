@@ -132,6 +132,7 @@ class ChartingState extends MusicBeatState
 
 	var value1InputText:FlxUIInputText;
 	var value2InputText:FlxUIInputText;
+	var value3InputText:FlxUIInputText;
 	var currentSongName:String;
 	
 	var zoomTxt:FlxText;
@@ -830,6 +831,11 @@ class ChartingState extends MusicBeatState
 		var text:FlxText = new FlxText(20, 130, 0, "Value 2:");
 		tab_group_event.add(text);
 		value2InputText = new FlxUIInputText(20, 150, 100, "");
+		blockPressWhileTypingOn.push(value2InputText);
+
+		var text:FlxText = new FlxText(20, 170, 0, "Value 3:");
+		tab_group_event.add(text);
+		value2InputText = new FlxUIInputText(20, 190, 100, "");
 		blockPressWhileTypingOn.push(value2InputText);
 
 		tab_group_event.add(descText);
@@ -1745,6 +1751,7 @@ class ChartingState extends MusicBeatState
 				}
 				value1InputText.text = curSelectedNote[3];
 				value2InputText.text = curSelectedNote[4];
+				value3InputText.text = curSelectedNote[5];
 			}
 			strumTimeInputText.text = curSelectedNote[0];
 		}
@@ -1800,7 +1807,7 @@ class ChartingState extends MusicBeatState
 			if(note.y < -150) note.y = -150;
 
 			if(note.noteData < 0) {
-				var daText:AttachedFlxText = new AttachedFlxText(0, 0, 400, 'Event: ' + note.eventName + ' (' + Math.floor(note.strumTime) + ' ms)' + '\nValue 1: ' + note.eventVal1 + '\nValue 2: ' + note.eventVal2, 12);
+				var daText:AttachedFlxText = new AttachedFlxText(0, 0, 400, 'Event: ' + note.eventName + ' (' + Math.floor(note.strumTime) + ' ms)' + '\nValue 1: ' + note.eventVal1 + '\nValue 2: ' + note.eventVal2 + "\nValue 3: " + note.eventVal3, 12);
 				daText.setFormat(Paths.font("vcr.ttf"), 12, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				daText.xAdd = -410;
 				daText.borderSize = 1;
