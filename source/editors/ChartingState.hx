@@ -835,12 +835,13 @@ class ChartingState extends MusicBeatState
 
 		var text:FlxText = new FlxText(20, 170, 0, "Value 3:");
 		tab_group_event.add(text);
-		value2InputText = new FlxUIInputText(20, 190, 100, "");
-		blockPressWhileTypingOn.push(value2InputText);
+		value3InputText = new FlxUIInputText(20, 190, 100, "");
+		blockPressWhileTypingOn.push(value3InputText);
 
 		tab_group_event.add(descText);
 		tab_group_event.add(value1InputText);
 		tab_group_event.add(value2InputText);
+		tab_group_event.add(value3InputText);
 		tab_group_event.add(eventDropDown);
 
 		UI_box.addGroup(tab_group_event);
@@ -1078,6 +1079,10 @@ class ChartingState extends MusicBeatState
 				}
 				else if(sender == value2InputText) {
 					curSelectedNote[4] = value2InputText.text;
+					updateGrid();
+				}
+				else if(sender == value3InputText) {
+					curSelectedNote[5] = value3InputText.text;
 					updateGrid();
 				}
 				else if(sender == strumTimeInputText) {
@@ -1972,7 +1977,9 @@ class ChartingState extends MusicBeatState
 			var event = eventStuff[Std.parseInt(eventDropDown.selectedId)][0];
 			var text1 = value1InputText.text;
 			var text2 = value2InputText.text;
-			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, event, text1, text2]);
+			var text3 = value3InputText.text;
+
+			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, event, text1, text2, text3]);
 		}
 		curSelectedNote = _song.notes[curSection].sectionNotes[_song.notes[curSection].sectionNotes.length - 1];
 
